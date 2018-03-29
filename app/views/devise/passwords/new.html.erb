@@ -1,0 +1,29 @@
+<div class="container">
+  <div id="forgotpassbox" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <%= render 'layouts/messages' %>
+    <%= devise_error_messages! %>
+    <div class="panel panel-info">
+      <div id="login-rails-admin" class="panel-heading">
+        <div class="panel-title">Esqueceu sua Senha?</div>
+      </div>
+      <div class="panel-body">
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <%= f.email_field :email, placeholder: 'Seu E-mail', autofocus: true, autocomplete: "email", class: "form-control" %>
+          </div>
+
+          <div class="form-group btn-submit">
+            <%= f.submit "Redefinir Senha", class: "btn btn-success pull-right" %>
+          </div>
+
+          <div class="input-group pull-left">
+            <%= render "devise/shared/links" %>
+          </div>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

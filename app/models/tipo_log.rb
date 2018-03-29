@@ -1,0 +1,2 @@
+class TipoLog < ApplicationRecord
+end

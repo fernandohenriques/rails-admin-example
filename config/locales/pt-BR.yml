@@ -1,0 +1,228 @@
+pt-BR:
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: "Aprox. 1 hora"
+        other: "Aprox. %{count} horas"
+      about_x_months:
+        one: "Aprox. 1 mês"
+        other: "Aprox. %{count} meses"
+      about_x_years:
+        one: "Aprox. 1 ano"
+        other: "Aprox. %{count} anos"
+      almost_x_years:
+        one: "Quase 1 ano"
+        other: "Quase %{count} anos"
+      half_a_minute: "Meio minuto"
+      less_than_x_minutes:
+        one: "Menos de um minuto"
+        other: "Menos de %{count} minutos"
+      less_than_x_seconds:
+        one: "Menos de 1 segundo"
+        other: "Menos de %{count} segundos"
+      over_x_years:
+        one: "Mais de 1 ano"
+        other: "Mais de %{count} anos"
+      x_days:
+        one: "1 dia"
+        other: "%{count} dias"
+      x_minutes:
+        one: "1 minuto"
+        other: "%{count} minutos"
+      x_months:
+        one: "1 mês"
+        other: "%{count} meses"
+      x_years:
+        one: "1 ano"
+        other: "%{count} anos"
+      x_seconds:
+        one: "1 segundo"
+        other: "%{count} segundos"
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      long: "%d de %B de %Y"
+      short: "%d de %B"
+  activerecord:
+    errors:
+      models:
+        usuario:
+          attributes:
+            nome:
+              blank: "não pode ser vazio!"
+            email:
+              blank: "não pode ser vazio!"
+              invalid: "Inválido!"
+              taken: "Usuário já existe!"
+            password:
+              too_short: "menor que 6 caracteres."
+            reset_password_token:
+              invalid: "Inválido!"
+            password_confirmation:
+              confirmation: "errada!"
+    models:
+      usuario:
+        one: Usuário
+        other: Usuário
+      video:
+        one: Vídeos
+        other: Vídeo
+    attributes:
+      usuario:
+        email: "E-mail"
+        password_confirmation: "Confirmação de senha"
+        password: "Senha"
+  views:
+  admin:
+    home:
+      name: Home
+    pagination:
+      previous: "« Anterior"
+      next: "Próximo »"
+      truncate: "…"
+    misc:
+      search: "Procurar"
+      filter: "Filtrar"
+      refresh: "Atualizar"
+      show_all: "Mostrar tudo"
+      add_filter: "Novo Filtro..."
+      bulk_menu_title: "Itens selecionados..."
+      remove: "Remover"
+      add_new: "Criar Novo"
+      chosen: "%{name} escolhido"
+      chose_all: "Escolher tudo"
+      clear_all: "Limpar tudo"
+      up: "Cima"
+      down: "Baixo"
+      navigation: "Menu"
+      log_out: "Logout"
+      ago: "atrás"
+    flash:
+      successful: "%{name} %{action} com sucesso"
+      error: "Sem sucesso!"
+      noaction: "Nenhuma ação executada"
+      model_not_found: "Modelo '%{model}' não encontrado "
+      object_not_found: "%{model} com identificador '%{id}' não encontrado"
+    table_headers:
+      model_name: "Tabela"
+      last_used: "Última vez usado em"
+      last_created: "Último cadastro"
+      records: "Registros"
+      username: "Usuário"
+      changes: "Alterações"
+      created_at: "Data/Hora"
+      item: "Item"
+      message: "Mensagem"
+    actions:
+      dashboard:
+        title: "Administração do Site"
+        menu: "Dashboard"
+        breadcrumb: "Dashboard"
+      index:
+        title: "Lista de %{model_label_plural}"
+        menu: "Lista"
+        breadcrumb: "%{model_label_plural}"
+      show:
+        title: "Detalhes para %{model_label} '%{object_label}'"
+        menu: "Mostrar"
+        breadcrumb: "%{object_label}"
+      show_in_app:
+        menu: "Mostrar na aplicação"
+      new:
+        title: "Novo %{model_label}"
+        menu: "Criar novo"
+        breadcrumb: "Novo"
+        link: "Criar um novo %{model_label}"
+        done: "criado"
+      edit:
+        title: "Editar %{model_label} '%{object_label}'"
+        menu: "Editar"
+        breadcrumb: "Editar"
+        link: "Editar este %{model_label}"
+        done: "atualizado"
+      delete:
+        title: "Remover %{model_label} '%{object_label}'"
+        menu: "Remover"
+        breadcrumb: "Remover"
+        link: "Remover '%{object_label}'"
+        done: "removido"
+      bulk_delete:
+        title: "Remover %{model_label_plural}"
+        menu: "Remover vários"
+        breadcrumb: "Remover vários"
+        bulk_link: "Remover selecionados %{model_label_plural}"
+      export:
+        title: "Exportar %{model_label}"
+        menu: "Exportar"
+        breadcrumb: "Exportar"
+        link: "Exportar %{model_label_plural} encontrados"
+        bulk_link: "Exportar %{model_label_plural} selecionados"
+        done: "exportados"
+      history_index:
+        title: "Histórico para %{model_label_plural}"
+        menu: "Histórico"
+        breadcrumb: "Histórico"
+      history_show:
+        title: "Histórico para %{model_label} '%{object_label}'"
+        menu: "Histórico"
+        breadcrumb: "Histórico"
+    form:
+      cancel: "Cancelar"
+      basic_info: "Informação Básica"
+      required: "Obrigatórios"
+      optional: "Opcional"
+      one_char: "caracter"
+      char_length_up_to: "comprimento até"
+      char_length_of: "comprimento de"
+      save: "Gravar"
+      save_and_add_another: "Gravar e criar outro"
+      save_and_edit: "Gravar e editar"
+      all_of_the_following_related_items_will_be_deleted: "? Os seguintes item serão apagados ou deixados orfãos:"
+      are_you_sure_you_want_to_delete_the_object: "Tem a certeza que quer apagar este %{model_name}"
+      confirmation: "Sim, tenho a certeza"
+      delete_confirmation: "Confirmar apagar"
+      bulk_delete: "Os seguintes objetos serão apagados, o que pode apagar ou deixar orfãos as dependências relacionadas"
+    export:
+      confirmation: "Exportar para %{name}"
+      select: "Selecionar campos para exportar"
+      fields_from: "Campos de %{name}"
+      fields_from_associated: "Campos associados com %{name}"
+      display: "Mostrar %{name}: %{type}"
+      options_for: "Opções para %{name}"
+      empty_value_for_associated_objects: ""
+      click_to_reverse_selection: 'Clique para inverter seleção'
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "Codificar para"
+        encoding_to_help: "Escolha a codificação. Deixe em branco para manter a codificação original: (%{name})"
+        skip_header: "Sem cabeçalho"
+        skip_header_help: "Não gerar cabeçalhos para (Campos sem cabeçalho)"
+        default_col_sep: ","
+        col_sep: "Separador de colunas"
+        col_sep_help: "Deixar em branco para usar omissão ('%{value}')" # value is default_col_sep
+  js:
+      true: Sim
+      false: Não
+      is_present: Está presente
+      is_blank: Está em branco
+      date: Data …
+      between_and_: Entre … e …
+      today: Hoje
+      yesterday: Ontem
+      this_week: Esta semana
+      last_week: Semana passada
+      number: Número …
+      contains: Contém
+      is_exactly: É exatamente
+      starts_with: Começa com
+      ends_with: Termina com
+      too_many_objects: "Muitos objetos. Use a busca acima."
+      no_objects: "Nenhum objeto encontrado"
+      loading: "Carregando …"
+      toggle_navigation: Alternar navegação
+  support:
+    array:
+      last_word_connector: " e "
+      two_words_connector: " e "
+      words_connector: ", "

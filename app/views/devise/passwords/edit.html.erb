@@ -1,0 +1,39 @@
+<div class="container">
+  <div id="forgotpassbox" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <%= devise_error_messages! %>
+    <div class="panel panel-info">
+      <div id="login-rails-admin" class="panel-heading">
+        <div class="panel-title">Altere sua Senha</div>
+      </div>
+      <div class="panel-body">
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+          <%= f.hidden_field :reset_password_token %>
+
+          <div>
+            <% if @minimum_password_length %>
+              <em>(Mínimo de <%= @minimum_password_length %> caracteres)</em><br />
+            <% end %>
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <%= f.password_field :password, placeholder: 'Nova Senha', autofocus: true, autocomplete: "off", class: "form-control" %>
+          </div>
+
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <%= f.password_field :password_confirmation, placeholder: 'Confirme a Nova Senha', autocomplete: "off", class: "form-control" %>
+          </div>
+
+          <div class="form-group btn-submit">
+            <%= f.submit "Alterar Senha", class: "btn btn-success pull-right" %>
+          </div>
+
+          <div class="input-group pull-left">
+            <%= render "devise/shared/links" %>
+          </div>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

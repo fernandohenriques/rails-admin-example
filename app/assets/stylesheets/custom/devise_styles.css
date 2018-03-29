@@ -1,0 +1,33 @@
+body {
+  background: #E9F0F5;
+}
+#loginbox, #forgotpassbox {
+    margin-top: 50px;
+}
+.panel-info {
+  border-color: #37BC9B;
+}
+#login-rails-admin {
+  color: #fff;
+  background-color: #37BC9B;
+  border-color: #37BC9B;
+}
+.panel-body{
+  padding-top:30px;
+}
+#loginbox .input-group, #forgotpassbox .input-group {
+  margin-bottom: 25px;
+}
+.form-group.btn-submit input{
+  width: 40%;
+  background: #37BC9B;
+  border-color: #37BC9B;
+}
+#loginbox .line-bottom {
+  border-top: 1px solid #888;
+  padding-top:15px;
+  font-size:85%;
+}
+button.close span {
+  outline: none
+}
